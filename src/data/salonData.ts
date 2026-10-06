@@ -3,19 +3,19 @@ import { ServiceItem, ExpertItem, GalleryItem, TestimonialItem, FaqItem, SalonCo
 export const initialContactInfo: SalonContactInfo = {
   name: "Delhi Celebrity Salon",
   brandTagline: "Where Beauty Meets Celebrity Style",
-  address: "Near Nagar Palika Parishad, Main Market Road",
+  address: "Front of PWD Gate",
   city: "Maharajganj",
   district: "Maharajganj District",
   state: "Uttar Pradesh",
   pincode: "273303",
   country: "India",
-  phone: "+91 98765 43210",
-  whatsapp: "+919876543210",
+  phone: "+91 9899 27 2750",
+  whatsapp: "+919899272750",
   email: "care@delhicelebritysalon.com",
   openingHours: "Mon – Sun: 09:30 AM – 08:30 PM",
-  googleMapsUrl: "https://maps.google.com/?q=Maharajganj+Uttar+Pradesh",
-  instagram: "https://instagram.com",
-  facebook: "https://facebook.com"
+  googleMapsUrl: "https://maps.app.goo.gl/2gEJUdYATfd6TB467",
+  instagram: "https://www.instagram.com/vickygaurhairstylist/",
+  facebook: "https://www.instagram.com/vickygaurhairstylist/"
 };
 
 export const salonServices: ServiceItem[] = [
@@ -300,11 +300,12 @@ export const salonServices: ServiceItem[] = [
 export const expertsList: ExpertItem[] = [
   {
     id: "exp-1",
-    name: "Vikram Malhotra",
+    name: "Vicky Gaur",
     role: "Senior Hair Stylist & Creative Director",
     specialization: "Advanced Precision Haircuts, Editorial Blowouts & Texture Reconstruction",
-    experience: "12+ Years Experience",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80",
+    experience: "15+ Years Experience",
+    // image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80",
+    image: "https://instagram.fvns1-5.fna.fbcdn.net/v/t51.75761-15/468384586_18330085246158892_9041257311303572850_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=MzUwOTI4NjM4NjQ4OTExNTExMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=UhBGmcF_QBEQ7kNvwGM-WOV&_nc_oc=Adpsx5v6zvWPBNjtBUGD0OvkFkXZF1vJXGKJvD1ZIpJhkApbQSeXFdsk2QaJiWTSOT0uCRvYa2-EhHI3Z4KqOmtK&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=instagram.fvns1-5.fna&_nc_gid=6v6GeGad2TsBZuieiuEIMQ&_nc_ss=7a22e&oh=00_AQPo7eqFTYHWK3BHJntbiOdZfUI0XQglRFnCpXvjIdsiiw&oe=6ACA8DE4",
     bio: "Trained across premier style academies, Vikram brings metropolitan flair and tailored cuts that naturally complement facial bone structures."
   },
   {
