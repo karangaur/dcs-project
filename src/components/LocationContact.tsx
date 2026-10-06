@@ -60,18 +60,18 @@ export const LocationContact: React.FC<LocationContactProps> = ({
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0D0D0D] text-[#FAF6EE] relative border-t border-neutral-900">
+    <section id="contact" className="py-28 bg-[#060706] text-[#FAF6EE] relative border-t border-[#D4AF37]/20 exotic-pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1815] border border-[#D4AF37]/30 rounded-full text-xs font-semibold text-[#D4AF37] mb-4">
-            <MapPin className="w-3.5 h-3.5" />
-            <span>Maharajganj, Uttar Pradesh, India</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141813] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37] mb-4 shadow-lg">
+            <span className="text-[#E5C378]">⚜</span>
+            <span className="font-marcellus tracking-wider">Sanctuary Concierge · Maharajganj, UP</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-serif-luxury font-medium text-white tracking-tight">
-            Visit Delhi Celebrity Salon
+            Visit Delhi Celebrity <span className="font-italiana italic gold-gradient-text">Salon</span>
           </h2>
-          <p className="mt-3 text-neutral-400 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-neutral-300 text-sm md:text-base leading-relaxed font-light">
             Located in Maharajganj, Uttar Pradesh. Connect with our concierge or drop in for a personalized beauty consultation.
           </p>
         </div>

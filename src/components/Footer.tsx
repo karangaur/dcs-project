@@ -9,17 +9,17 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ contactInfo }) => {
   return (
-    <footer className="bg-[#080808] text-neutral-400 text-xs border-t border-neutral-900 pb-20 sm:pb-10 pt-16">
+    <footer className="bg-[#050605] text-neutral-400 text-xs border-t border-[#D4AF37]/25 pb-24 sm:pb-12 pt-18 exotic-pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand & Maharajganj Location Identity */}
           <div className="space-y-4">
             <BrandName variant="footer" />
-            <p className="text-neutral-400 text-xs leading-relaxed font-sans-clean">
-              Where Beauty Meets Celebrity Style. Maharajganj's premier destination for luxury hair styling, precision cuts, HD bridal makeup, and clinical skin rejuvenation.
+            <p className="text-neutral-400 text-xs leading-relaxed font-sans-clean font-light">
+              Where Beauty Meets Celebrity Style. Maharajganj's premier sanctuary for luxury hair styling, precision cuts, HD bridal makeup, and clinical skin rejuvenation.
             </p>
             <div className="flex items-center gap-2 text-[#D4AF37] font-medium text-xs">
-              <MapPin className="w-3.5 h-3.5 shrink-0" />
+              <span className="text-[#E5C378]">⚜</span>
               <span>Maharajganj, Uttar Pradesh, India</span>
             </div>
           </div>

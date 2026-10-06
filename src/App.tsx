@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#FAF6EE]">
+    <div className="min-h-screen bg-[#060706] text-[#FAF6EE] selection:bg-[#D4AF37]/35 selection:text-[#FAF6EE]">
       {/* Sticky Navigation */}
       <Navbar
         contactInfo={contactInfo}

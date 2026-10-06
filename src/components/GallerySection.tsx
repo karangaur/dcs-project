@@ -18,31 +18,31 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ onOpenBooking })
     : galleryItems.filter(item => item.category === activeFilter);
 
   return (
-    <section id="gallery" className="py-24 bg-[#0A0A0A] text-[#FAF6EE] relative border-t border-neutral-900">
+    <section id="gallery" className="py-28 bg-[#060706] text-[#FAF6EE] relative border-t border-[#D4AF37]/20 exotic-pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1815] border border-[#D4AF37]/30 rounded-full text-xs font-semibold text-[#D4AF37] mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Maharajganj Salon Portfolio</span>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141813] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37] mb-4 shadow-lg">
+            <span className="text-[#E5C378]">⚜</span>
+            <span className="font-marcellus tracking-wider">The Maharajganj Portfolio · Visual Gallery</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-serif-luxury font-medium text-white tracking-tight">
-            Celebrity Transformations & Artistry
+            Celebrity Transformations & <span className="font-italiana italic gold-gradient-text">Artistry</span>
           </h2>
-          <p className="mt-3 text-neutral-400 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-neutral-300 text-sm md:text-base leading-relaxed font-light">
             Witness the craftsmanship from our styling chairs in Maharajganj, Uttar Pradesh. From dramatic hair color melts to regal bridal looks.
           </p>
         </div>
 
         {/* Filter Navigation */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-2.5 mb-14">
           {(
             [
-              { id: 'all', label: 'All Showcase' },
-              { id: 'hair', label: 'Hair' },
-              { id: 'makeup', label: 'Makeup' },
-              { id: 'bridal', label: 'Bridal' },
-              { id: 'beauty', label: 'Beauty' },
+              { id: 'all', label: 'All Portfolio' },
+              { id: 'hair', label: 'Hair Couture' },
+              { id: 'makeup', label: 'Celebrity Makeup' },
+              { id: 'bridal', label: 'Royal Bridal' },
+              { id: 'beauty', label: 'Skin & Spa' },
               { id: 'transformations', label: 'Transformations' }
             ] as const
           ).map((tab) => (
@@ -51,8 +51,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ onOpenBooking })
               onClick={() => setActiveFilter(tab.id)}
               className={`px-5 py-2 text-xs md:text-sm font-medium rounded-full transition-all duration-300 ${
                 activeFilter === tab.id
-                  ? 'bg-[#D4AF37] text-black shadow-lg shadow-[#D4AF37]/20 font-semibold'
-                  : 'bg-[#141414] text-neutral-400 hover:text-white hover:bg-neutral-800 border border-neutral-800'
+                  ? 'bg-gradient-to-r from-[#D4AF37] via-[#E8C57C] to-[#C4983F] text-black shadow-lg shadow-[#D4AF37]/20 font-semibold'
+                  : 'bg-[#111311] text-neutral-400 hover:text-white hover:bg-neutral-800 border border-neutral-800'
               }`}
             >
               {tab.label}

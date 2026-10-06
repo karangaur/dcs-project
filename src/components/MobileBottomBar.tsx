@@ -9,11 +9,11 @@ interface MobileBottomBarProps {
 
 export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({ contactInfo, onOpenBooking }) => {
   return (
-    <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0D0D0D]/95 backdrop-blur-md border-t border-neutral-800 p-2.5 px-3 flex items-center justify-between gap-2 shadow-2xl h-16">
+    <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#060706]/95 backdrop-blur-md border-t border-[#D4AF37]/30 p-2.5 px-3 flex items-center justify-between gap-2 shadow-[0_-5px_25px_rgba(0,0,0,0.9)] h-16">
       {/* Call Button */}
       <a
         href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`}
-        className="flex-1 h-11 rounded-xl bg-[#1A1A1A] border border-neutral-750 text-neutral-200 flex items-center justify-center gap-1.5 text-xs font-semibold active:scale-95 transition-transform"
+        className="flex-1 h-11 rounded-xl bg-[#121411] border border-neutral-750 text-neutral-200 flex items-center justify-center gap-1.5 text-xs font-semibold active:scale-95 transition-transform"
         aria-label="Call Delhi Celebrity Salon"
       >
         <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
@@ -35,7 +35,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({ contactInfo, o
       {/* Book Appointment CTA Button */}
       <button
         onClick={onOpenBooking}
-        className="flex-[1.6] h-11 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#E5C378] to-[#D4AF37] text-black font-semibold text-xs shadow-lg flex items-center justify-center gap-1.5 active:scale-95 transition-transform"
+        className="flex-[1.6] h-11 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#E8C57C] to-[#C4983F] text-black font-semibold text-xs shadow-lg flex items-center justify-center gap-1.5 active:scale-95 transition-transform"
       >
         <Calendar className="w-3.5 h-3.5" />
         <span>Book Slot</span>

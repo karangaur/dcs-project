@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ contactInfo, onOpenBooking }) =>
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0D0D0D]/95 backdrop-blur-md border-b border-neutral-850 py-3 shadow-lg'
+          ? 'bg-[#060706]/92 backdrop-blur-xl border-b border-[#D4AF37]/30 py-3 shadow-[0_10px_35px_rgba(0,0,0,0.85)]'
           : 'bg-transparent py-4 sm:py-5'
       }`}
     >
@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ contactInfo, onOpenBooking }) =>
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-[#D4AF37] transition-colors tracking-wide hover:underline underline-offset-8"
+                className="hover:text-[#D4AF37] transition-colors tracking-widest uppercase text-[11px] font-sans-clean hover:underline underline-offset-8"
               >
                 {link.name}
               </a>
@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ contactInfo, onOpenBooking }) =>
           <div className="flex items-center gap-3">
             <button
               onClick={onOpenBooking}
-              className="hidden sm:inline-flex py-2 px-4 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#D4AF37] via-[#E5C378] to-[#D4AF37] text-black shadow-md hover:brightness-110 active:scale-95 transition-all items-center gap-1.5 whitespace-nowrap"
+              className="hidden sm:inline-flex py-2.5 px-5 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#D4AF37] via-[#E8C57C] to-[#C4983F] text-black shadow-[0_2px_18px_rgba(212,175,55,0.25)] hover:brightness-110 active:scale-95 transition-all items-center gap-1.5 whitespace-nowrap"
             >
               <Calendar className="w-3.5 h-3.5" />
               <span>Book Appointment</span>

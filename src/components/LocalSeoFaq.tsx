@@ -24,18 +24,18 @@ export const LocalSeoFaq: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#0A0A0A] text-[#FAF6EE] relative border-t border-neutral-900">
+    <section className="py-28 bg-[#060706] text-[#FAF6EE] relative border-t border-[#D4AF37]/20 exotic-pattern-bg">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1815] border border-[#D4AF37]/30 rounded-full text-xs font-semibold text-[#D4AF37] mb-4">
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>Maharajganj Salon Guide</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141813] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37] mb-4 shadow-lg">
+            <span className="text-[#E5C378]">⚜</span>
+            <span className="font-marcellus tracking-wider">Sanctuary Intelligence · Maharajganj Guide</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-serif-luxury font-medium text-white tracking-tight">
-            Frequently Asked Questions
+          <h2 className="text-3xl md:text-5xl font-serif-luxury font-medium text-white tracking-tight">
+            Frequently Asked <span className="font-italiana italic gold-gradient-text">Questions</span>
           </h2>
-          <p className="mt-3 text-neutral-400 text-xs sm:text-sm leading-relaxed">
+          <p className="mt-3 text-neutral-300 text-xs sm:text-sm leading-relaxed font-light">
             Everything you need to know about visiting Delhi Celebrity Salon in Maharajganj, Uttar Pradesh.
           </p>
         </div>
@@ -47,7 +47,7 @@ export const LocalSeoFaq: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl bg-[#141414] border border-neutral-800/80 transition-colors overflow-hidden"
+                className="rounded-2xl bg-[#0D0F0D] border border-neutral-800/80 hover:border-[#D4AF37]/40 transition-colors overflow-hidden exotic-glass-hover"
               >
                 <button
                   onClick={() => toggleAccordion(idx)}

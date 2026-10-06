@@ -10,17 +10,17 @@ interface OurExpertsProps {
 
 export const OurExperts: React.FC<OurExpertsProps> = ({ onSelectExpertForBooking }) => {
   return (
-    <section id="team" className="py-24 bg-[#0D0D0D] text-[#FAF6EE] relative border-t border-neutral-900">
+    <section id="team" className="py-28 bg-[#080908] text-[#FAF6EE] relative border-t border-[#D4AF37]/20 exotic-pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1815] border border-[#D4AF37]/30 rounded-full text-xs font-semibold text-[#D4AF37] mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Master Stylists & Artists</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#141813] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37] mb-4 shadow-lg">
+            <span className="text-[#E5C378]">⚜</span>
+            <span className="font-marcellus tracking-wider">Master Stylists & Artisans · Maharajganj</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-serif-luxury font-medium text-white tracking-tight">
-            Meet Our Celebrity Artists
+            Meet Our Celebrity <span className="font-italiana italic gold-gradient-text">Artists</span>
           </h2>
-          <p className="mt-3 text-neutral-400 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-neutral-300 text-sm md:text-base leading-relaxed font-light">
             Our team in Maharajganj brings certified training from elite academies, combining technical precision with artistic passion.
           </p>
         </div>
@@ -29,21 +29,21 @@ export const OurExperts: React.FC<OurExpertsProps> = ({ onSelectExpertForBooking
           {expertsList.map((expert) => (
             <div
               key={expert.id}
-              className="group rounded-2xl bg-[#141414] border border-neutral-850 hover:border-[#D4AF37]/50 transition-all duration-300 overflow-hidden flex flex-col justify-between"
+              className="group rounded-t-[3.5rem] rounded-b-2xl bg-[#0D0F0D] border border-neutral-800 hover:border-[#D4AF37]/60 transition-all duration-500 overflow-hidden flex flex-col justify-between hover:shadow-[0_15px_45px_rgba(212,175,55,0.12)] hover:-translate-y-1"
             >
               <div>
-                {/* Profile Photo */}
-                <div className="relative aspect-[3/4] overflow-hidden bg-neutral-900">
+                {/* Profile Photo with Arch */}
+                <div className="relative aspect-[3/4] overflow-hidden bg-neutral-900 rounded-t-[3.5rem]">
                   <SalonImage
                     src={expert.image}
                     alt={`${expert.name} - ${expert.role} at Delhi Celebrity Salon Maharajganj`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     categoryHint="Master Artist"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D0F0D] via-transparent to-transparent opacity-90" />
                   
                   {/* Experience Badge */}
-                  <div className="absolute top-3 right-3 bg-black/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded-full text-[10px] font-semibold text-[#D4AF37]">
+                  <div className="absolute top-4 right-4 bg-black/85 backdrop-blur-md border border-[#D4AF37]/50 px-3 py-1 rounded-full text-[10px] font-semibold text-[#D4AF37]">
                     {expert.experience}
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export const OurExperts: React.FC<OurExpertsProps> = ({ onSelectExpertForBooking
                     </p>
                   </div>
 
-                  <p className="mt-3 text-xs text-neutral-400 leading-relaxed font-sans-clean italic">
+                  <p className="mt-3 text-xs text-neutral-400 leading-relaxed font-sans-clean italic font-light">
                     "{expert.bio}"
                   </p>
                 </div>
@@ -76,10 +76,10 @@ export const OurExperts: React.FC<OurExpertsProps> = ({ onSelectExpertForBooking
               <div className="p-6 pt-0">
                 <button
                   onClick={() => onSelectExpertForBooking(expert.id)}
-                  className="w-full py-2.5 rounded-xl text-xs font-semibold bg-neutral-800 text-neutral-200 hover:bg-[#D4AF37] hover:text-black transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-2.5 rounded-xl text-xs font-semibold bg-[#161815] border border-[#D4AF37]/30 text-neutral-200 hover:bg-gradient-to-r hover:from-[#D4AF37] hover:to-[#C4983F] hover:text-black transition-all flex items-center justify-center gap-2"
                 >
                   <Calendar className="w-3.5 h-3.5" />
-                  <span>Book with {expert.name.split(' ')[0]}</span>
+                  <span>Reserve with {expert.name.split(' ')[0]}</span>
                 </button>
               </div>
             </div>
