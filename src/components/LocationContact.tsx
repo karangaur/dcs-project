@@ -14,6 +14,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { SalonContactInfo } from '../types/salon';
+import { BrandName } from './BrandName';
 
 interface LocationContactProps {
   contactInfo: SalonContactInfo;
@@ -120,11 +121,9 @@ export const LocationContact: React.FC<LocationContactProps> = ({
           <div className="lg:col-span-4 p-8 rounded-2xl bg-[#141414] border border-neutral-850 space-y-6">
             <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
               <div>
-                <h3 className="text-xl font-serif-luxury text-white font-medium">
-                  {contactInfo.name}
-                </h3>
-                <span className="text-xs text-[#D4AF37] block mt-0.5">
-                  Maharajganj, Uttar Pradesh, India
+                <BrandName variant="navbar" showCrest={true} />
+                <span className="text-xs text-[#D4AF37] block mt-1.5 font-medium">
+                  📍 Maharajganj, Uttar Pradesh, India
                 </span>
               </div>
               <button

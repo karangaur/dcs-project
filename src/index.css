@@ -21,15 +21,33 @@
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
 .font-sans-clean {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 /* Luxury gold shimmer & gradients */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #FFF0D0 0%, #D4AF37 50%, #AA8018 100%);
+  background: linear-gradient(135deg, #FFFDF8 0%, #F3E5C8 20%, #D4AF37 55%, #AA8018 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.brand-shimmer-text {
+  background: linear-gradient(90deg, #FAF6EE 0%, #E5C378 25%, #FFFDF8 50%, #D4AF37 75%, #FAF6EE 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .gold-border-gradient {

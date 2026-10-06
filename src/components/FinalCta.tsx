@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Calendar, Phone, MessageSquare } from 'lucide-react';
 import { SalonContactInfo } from '../types/salon';
+import { BrandName } from './BrandName';
 
 interface FinalCtaProps {
   contactInfo: SalonContactInfo;
@@ -14,9 +15,12 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ contactInfo, onOpenBooking }
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#D4AF37]/10 via-transparent to-transparent pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1F1B12] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37]">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>📍 Maharajganj, Uttar Pradesh</span>
+        <div className="flex flex-col items-center">
+          <BrandName variant="navbar" className="mb-4" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1F1B12] border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#D4AF37]">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>📍 Maharajganj, Uttar Pradesh</span>
+          </div>
         </div>
 
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif-luxury font-medium text-white tracking-tight leading-tight">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Facebook, Sparkles } from 'lucide-react';
 import { SalonContactInfo } from '../types/salon';
+import { BrandName } from './BrandName';
 
 interface FooterProps {
   contactInfo: SalonContactInfo;
@@ -13,9 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ contactInfo }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand & Maharajganj Location Identity */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif-luxury font-medium text-white tracking-tight">
-              Delhi Celebrity Salon
-            </h3>
+            <BrandName variant="footer" />
             <p className="text-neutral-400 text-xs leading-relaxed font-sans-clean">
               Where Beauty Meets Celebrity Style. Maharajganj's premier destination for luxury hair styling, precision cuts, HD bridal makeup, and clinical skin rejuvenation.
             </p>

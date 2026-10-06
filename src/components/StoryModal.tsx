@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Sparkles, Award, ShieldCheck, Heart } from 'lucide-react';
 import { SalonImage } from './SalonImage';
+import { BrandName } from './BrandName';
 
 interface StoryModalProps {
   isOpen: boolean;
@@ -29,13 +30,11 @@ export const StoryModal: React.FC<StoryModalProps> = ({
           <X className="w-5 h-5" />
         </button>
 
-        <div className="text-center mb-8">
-          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold">
-            Our Heritage & Philosophy · Maharajganj
+        <div className="text-center mb-8 flex flex-col items-center">
+          <BrandName variant="hero" className="scale-90 mb-3" />
+          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mt-1">
+            Our Heritage & Philosophy · Maharajganj, UP
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif-luxury mt-2 font-semibold text-white">
-            The Story Behind Delhi Celebrity Salon
-          </h2>
           <p className="text-sm text-[#D4AF37] italic mt-1 font-serif-luxury">
             “Beauty Is Personal. We Make It Extraordinary.”
           </p>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Calendar, Clock, User, Phone, CheckCircle, MessageSquare, Sparkles } from 'lucide-react';
 import { ServiceItem, ExpertItem, SalonContactInfo } from '../types/salon';
 import { salonServices, expertsList } from '../data/salonData';
+import { BrandName } from './BrandName';
 
 interface AppointmentModalProps {
   isOpen: boolean;
@@ -112,11 +113,12 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
         {!isSubmitted ? (
           <>
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 flex flex-col items-center">
+              <BrandName variant="navbar" className="mb-2" />
               <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold">
                 Celebrity Beauty Experience · Maharajganj
               </span>
-              <h2 className="text-2xl md:text-3xl font-serif-luxury mt-1 font-semibold text-white">
+              <h2 className="text-2xl font-serif-luxury mt-1 font-semibold text-white">
                 Reserve Your Appointment
               </h2>
               <p className="text-xs md:text-sm text-neutral-400 mt-1 max-w-md mx-auto">
@@ -327,7 +329,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
             </h3>
 
             <p className="text-sm text-neutral-300 max-w-md mx-auto">
-              Thank you, <span className="font-semibold text-white">{clientName}</span>. Your reservation at <span className="text-[#D4AF37]">Delhi Celebrity Salon (Maharajganj)</span> is reserved.
+              Thank you, <span className="font-semibold text-white">{clientName}</span>. Your reservation at <BrandName variant="inline" className="text-xs sm:text-sm" /> (Maharajganj) is confirmed.
             </p>
 
             <div className="bg-[#1A1A1A] border border-neutral-800 rounded-xl p-4 text-left max-w-md mx-auto text-xs space-y-2">

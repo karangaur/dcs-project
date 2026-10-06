@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Calendar, Phone, MessageSquare } from 'lucide-react';
 import { SalonContactInfo } from '../types/salon';
+import { BrandName } from './BrandName';
 
 interface NavbarProps {
   contactInfo: SalonContactInfo;
@@ -34,17 +35,18 @@ export const Navbar: React.FC<NavbarProps> = ({ contactInfo, onOpenBooking }) =>
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
           ? 'bg-[#0D0D0D]/95 backdrop-blur-md border-b border-neutral-850 py-3 shadow-lg'
-          : 'bg-transparent py-5'
+          : 'bg-transparent py-4 sm:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Zone 1: Single Text Element Wordmark */}
+          {/* Zone 1: Luxury Styled Brand Name Wordmark */}
           <a
             href="#"
-            className="text-xl sm:text-2xl font-serif-luxury font-medium tracking-tight text-white hover:text-[#D4AF37] transition-colors whitespace-nowrap"
+            className="flex items-center text-white transition-opacity hover:opacity-95"
+            aria-label="Delhi Celebrity Salon - Home"
           >
-            Delhi Celebrity Salon
+            <BrandName variant="navbar" />
           </a>
 
           {/* Zone 2: Clean Text Nav Links */}

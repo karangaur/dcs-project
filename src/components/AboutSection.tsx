@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Check, ArrowRight, ShieldCheck, HeartHandshake, Award } from 'lucide-react';
 import { SalonImage } from './SalonImage';
+import { BrandName } from './BrandName';
 
 interface AboutSectionProps {
   onOpenStory: () => void;
@@ -56,7 +57,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenStory, onOpenB
             </h2>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans-clean">
-              Located in the heart of <strong>Maharajganj, Uttar Pradesh</strong>, <strong>Delhi Celebrity Salon</strong> introduces an elevated realm of personal styling, where contemporary metropolitan aesthetics blend seamlessly with warm, attentive hospitality.
+              Located in the heart of <strong>Maharajganj, Uttar Pradesh</strong>, <BrandName variant="inline" className="text-sm sm:text-base" /> introduces an elevated realm of personal styling, where contemporary metropolitan aesthetics blend seamlessly with warm, attentive hospitality.
             </p>
 
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-sans-clean">

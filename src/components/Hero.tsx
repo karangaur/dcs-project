@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Sparkles, ArrowRight, Calendar, Star, ShieldCheck } from 'lucide-react';
 import { SalonImage } from './SalonImage';
+import { BrandName } from './BrandName';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -8,24 +9,28 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center bg-[#0D0D0D] overflow-hidden pt-20 pb-16">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center bg-[#0D0D0D] overflow-hidden pt-28 sm:pt-32 pb-16">
       {/* Background Image with Cinematic Scrim */}
       <div className="absolute inset-0 z-0">
         <SalonImage
           src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2000&q=80"
           alt="Delhi Celebrity Salon luxury ambiance in Maharajganj, Uttar Pradesh"
-          className="w-full h-full object-cover scale-105 filter brightness-[0.4] contrast-105"
+          className="w-full h-full object-cover scale-105 filter brightness-[0.38] contrast-105"
         />
         {/* Gradients to guarantee WCAG contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/70 to-[#0A0A0A]/40" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#D4AF37]/15 via-transparent to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center py-12">
-        {/* Distinctive Location Trust Marker */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1A1815]/90 border border-[#D4AF37]/50 backdrop-blur-md text-xs font-semibold text-[#D4AF37] mb-6 shadow-lg">
-          <MapPin className="w-3.5 h-3.5 text-[#D4AF37] animate-pulse" />
-          <span className="tracking-wide">📍 Maharajganj, Uttar Pradesh</span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center py-8">
+        {/* Brand Royal Insignia & Maharajganj Trust Marker */}
+        <div className="mb-6 inline-flex flex-col items-center">
+          <BrandName variant="hero" className="mb-5 scale-95 sm:scale-105 transition-transform" />
+          
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1A1815]/90 border border-[#D4AF37]/50 backdrop-blur-md text-xs font-semibold text-[#D4AF37] shadow-lg">
+            <MapPin className="w-3.5 h-3.5 text-[#D4AF37] animate-pulse" />
+            <span className="tracking-wide">📍 Maharajganj, Uttar Pradesh</span>
+          </div>
         </div>
 
         {/* Hero Headline */}
